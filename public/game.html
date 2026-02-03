@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mafia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-night" id="game-body">
+    <div class="overlay"></div>
+    <header class="top-bar">
+      <div class="logo">
+        <span class="logo-mark">🕵️‍♂️</span>
+        <span class="logo-text">MAFIA NIGHT</span>
+      </div>
+      <div class="top-actions">
+        <span id="game-user" class="badge"></span>
+        <button id="game-leave-btn" class="icon-btn">Leave</button>
+      </div>
+    </header>
+
+    <main class="game-container">
+      <section class="card">
+        <h1 id="game-title" class="title">Lobby</h1>
+        <p id="game-subtitle" class="subtitle"></p>
+
+        <div id="players-list" class="players-list"></div>
+
+        <div id="host-controls" class="host-controls hidden">
+          <button id="start-game-btn" class="btn primary">Start game</button>
+          <button id="resolve-phase-btn" class="btn secondary hidden">
+            Phase ni yakunlash
+          </button>
+        </div>
+
+        <div id="actions-section" class="actions-section"></div>
+
+        <div id="timer" class="timer hidden"></div>
+        <div id="status" class="status"></div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+  </html>
+

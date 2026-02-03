@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mafia Lobby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-night">
+    <div class="overlay"></div>
+    <header class="top-bar">
+      <div class="logo">
+        <span class="logo-mark">🕵️‍♂️</span>
+        <span class="logo-text">MAFIA NIGHT</span>
+      </div>
+      <div class="top-actions">
+        <span id="current-user" class="badge"></span>
+        <button id="logout-btn" class="icon-btn">Log out</button>
+      </div>
+    </header>
+
+    <main class="lobby-container">
+      <section class="card">
+        <h1 class="title">O'yinni boshlash</h1>
+        <p class="subtitle">
+          Yangi o'yin yarat va linkni do'stlaringga yubor. Ular ham oldindan
+          ro'yxatdan o'tgan bo'lishi kerak.
+        </p>
+
+        <div class="actions">
+          <button id="create-game-btn" class="btn primary">Oyinni Boshlash</button>
+        </div>
+
+        <div id="game-link-section" class="hidden">
+          <p class="subtitle">Bu o'yin uchun maxsus link:</p>
+          <div class="link-box">
+            <input id="game-link-input" type="text" readonly />
+            <button id="copy-link-btn" class="btn small">Copy</button>
+          </div>
+          <p class="hint">
+            Ushbu linkni istalgan ijtimoiy tarmoq orqali do'stlaringga yubor.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="lobby.js"></script>
+  </body>
+  </html>
+
