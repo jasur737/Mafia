@@ -1,0 +1,11 @@
+[build]
+  publish = "public"
+  command = ""
+
+# This project has multiple HTML pages (not a SPA).
+# Don't rewrite every path to /index.html.
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+
